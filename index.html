@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Stanis Mbala | Odoo Developer | Data Analyst | Business Analyst | Laravel Developer</title>
+  <meta name="description" content="Stanis Mbala - Consultant ERP Odoo, Business Analyst et Data Analyst. Expert en transformation digitale, développement Laravel et Business Intelligence. J'accompagne les entreprises dans leur performance numérique.">
+  <meta name="keywords" content="Stanis Mbala, Odoo Developer, Data Analyst, Business Analyst, Laravel Developer, ERP Consultant, Digital Transformation, Business Intelligence, Power BI, Python, SQL, Process Automation">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Styles supplémentaires pour un rendu premium */
+    .highlight {
+      color: #0d6efd;
+    }
+    .hero .btn-outline {
+      border: 2px solid #0d6efd;
+      color: #0d6efd;
+      background: transparent;
+      transition: all 0.3s ease;
+    }
+    .hero .btn-outline:hover {
+      background: #0d6efd;
+      color: #fff;
+    }
+    .hero .social-links a {
+      color: #6c757d;
+      transition: all 0.3s ease;
+      font-size: 1.2rem;
+      margin: 0 10px;
+    }
+    .hero .social-links a:hover {
+      color: #0d6efd;
+      transform: translateY(-3px);
+    }
+    .floating-card {
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 10px 18px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+    .floating-card i {
+      font-size: 1.3rem;
+      color: #0d6efd;
+    }
+    .floating-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(13,110,253,0.2);
+    }
+    .header-social-links a {
+      color: #6c757d;
+      transition: all 0.3s ease;
+      margin-left: 15px;
+      font-size: 1.1rem;
+    }
+    .header-social-links a:hover {
+      color: #0d6efd;
+      transform: translateY(-2px);
+    }
+    .btn-primary {
+      background: #0d6efd;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover {
+      background: #0b5ed7;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(13,110,253,0.3);
+    }
+    .image-wrapper img {
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    .image-wrapper img:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 25px 70px rgba(0,0,0,0.15);
+    }
+    .floating-elements {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+    .floating-card {
+      position: absolute;
+      pointer-events: auto;
+    }
+    .floating-card.data-analytics {
+      top: 5%;
+      right: -10%;
+    }
+    .floating-card.odoo-erp {
+      bottom: 20%;
+      left: -15%;
+    }
+    .floating-card.bi-dashboard {
+      top: 50%;
+      right: -5%;
+      transform: translateY(-50%);
+    }
+    .floating-card.digital-transformation {
+      bottom: 5%;
+      right: 10%;
+    }
+    @media (max-width: 992px) {
+      .floating-card {
+        display: none;
+      }
+    }
+    #footer .social-links a {
+      color: #6c757d;
+      transition: all 0.3s ease;
+      margin: 0 10px;
+      font-size: 1.2rem;
+    }
+    #footer .social-links a:hover {
+      color: #0d6efd;
+      transform: translateY(-3px);
+    }
+    .typed {
+      color: #0d6efd;
+    }
+    .hero-content h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .hero-content h2 {
+      font-size: 1.8rem;
+      font-weight: 300;
+      margin-top: 10px;
+    }
+    .hero-content p {
+      font-size: 1.1rem;
+      color: #6c757d;
+      margin: 20px 0 30px;
+      line-height: 1.8;
+    }
+    .hero-actions .btn {
+      margin-right: 15px;
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: FolioOne - Personnalisé pour Stanis Mbala
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="resume.html">CV</a></li>
+          <li><a href="services.html"></a>Nos solutions</a></li>
+          <li><a href="portfolio.html">Projets réalisés</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+     <div class="header-social-links">
+  <a href="https://www.linkedin.com/in/stanis-mbala-027b73303/" class="linkedin" title="LinkedIn" target="_blank">
+    <i class="bi bi-linkedin"></i>
+  </a>
+  <a href="https://github.com/votre-utilisateur" class="github" title="GitHub" target="_blank">
+    <i class="bi bi-github"></i>
+  </a>
+  <a href="https://wa.me/243812779730" class="whatsapp" title="WhatsApp" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <a href="mailto:mbalastns@gmail.com" class="envelope" title="Email">
+    <i class="bi bi-envelope"></i>
+  </a>
+  <a href="https://www.facebook.com/delohim.mbalastanis" class="facebook" title="Facebook" target="_blank">
+    <i class="bi bi-facebook"></i>
+  </a>
+</div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <div class="hero-content">
+              <h1 data-aos="fade-up" data-aos-delay="200">Bonjour, je suis <span class="highlight">D'elohim Mbala</span></h1>
+              <h2 data-aos="fade-up" data-aos-delay="300">
+                <span class="typed" data-typed-items="Odoo Developer, Business Analyst, Data Analyst, Laravel Developer, ERP Consultant, Digital Transformation Specialist"></span>
+              </h2>
+              <p data-aos="fade-up" data-aos-delay="400">
+                Spécialiste en transformation digitale et développement ERP. J'accompagne les entreprises dans l'optimisation de leurs processus grâce à des solutions innovantes en <strong>Odoo, Laravel</strong> et <strong>Business Intelligence</strong>. Mon expertise couvre l'analyse de données, l'automatisation des processus métiers et la conception de systèmes sur mesure pour une performance durable.
+              </p>
+             <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+  <a href="portfolio.html" class="btn btn-primary">Voir mes projets</a>
+  <a href="contact.html" class="btn btn-outline">Me contacter</a>
+</div>
+             
+            
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2">
+  <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
+    <div class="image-wrapper position-relative">
+      <!-- Photo de profil ronde -->
+      <img src="assets/img/profile/profil.jpg" alt="Stanis Mbala - Consultant ERP & Data Analyst" class="img-fluid">
+      <figcaption class="profile-caption">
+        <div class="meta">
+          <strong>D'elohim Mbala</strong>
+          <div class="funfact">Consultant ERP &amp; Data Analyst</div>
+        </div>
+      </figcaption>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Stanis Mbala</strong> <span>Tous droits réservés.</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+ <a href="https://www.linkedin.com/in/stanis-mbala-027b73303/" class="linkedin" title="LinkedIn" target="_blank">
+    <i class="bi bi-linkedin"></i>
+  </a>
+  <a href="https://github.com/votre-utilisateur" class="github" title="GitHub" target="_blank">
+    <i class="bi bi-github"></i>
+  </a>
+  <a href="https://wa.me/243812779730" class="whatsapp" title="WhatsApp" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <a href="mailto:mbalastns@gmail.com" class="envelope" title="Email">
+    <i class="bi bi-envelope"></i>
+  </a>
+  <a href="https://www.facebook.com/delohim.mbalastanis" class="facebook" title="Facebook" target="_blank">
+    <i class="bi bi-facebook"></i>
+  </a>
+      </div>
+      <div class="credits">
+        <!-- Crédits retirés conformément à la demande -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
