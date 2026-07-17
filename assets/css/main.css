@@ -3109,6 +3109,77 @@ section,
   background-color: color-mix(in srgb, var(--surface-color), transparent 70%);
 }
 
+/* Centrage de l'image et de la légende sur mobile */
+.about .profile-figure {
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about .profile-figure .profile-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.about .profile-figure .profile-photo {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 20px 60px rgba(13, 110, 253, 0.15);
+  border: 4px solid rgba(13, 110, 253, 0.1);
+  transition: all 0.4s ease;
+}
+
+.about .profile-figure .profile-photo:hover {
+  transform: scale(1.02) translateY(-5px);
+  box-shadow: 0 25px 70px rgba(13, 110, 253, 0.25);
+  border-color: rgba(13, 110, 253, 0.3);
+}
+
+.about .profile-figure .profile-caption {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.about .profile-figure .profile-caption .meta {
+  font-size: 14px;
+  color: #6c757d;
+  text-align: center;
+}
+
+.about .profile-figure .profile-caption .meta strong {
+  display: block;
+  font-weight: 600;
+  color: #212529;
+}
+
+.about .profile-figure .profile-caption .meta .funfact {
+  font-size: 13px;
+  margin-top: 4px;
+  color: #adb5bd;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about .profile-figure .profile-photo {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about .profile-figure .profile-photo {
+    width: 220px;
+    height: 220px;
+  }
+}
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
