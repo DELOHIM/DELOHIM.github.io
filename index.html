@@ -4,317 +4,449 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Stanis Mbala | Odoo Developer | Data Analyst | Business Analyst | Laravel Developer</title>
-  <meta name="description" content="Stanis Mbala - Consultant ERP Odoo, Business Analyst et Data Analyst. Expert en transformation digitale, développement Laravel et Business Intelligence. J'accompagne les entreprises dans leur performance numérique.">
-  <meta name="keywords" content="Stanis Mbala, Odoo Developer, Data Analyst, Business Analyst, Laravel Developer, ERP Consultant, Digital Transformation, Business Intelligence, Power BI, Python, SQL, Process Automation">
+  <title>D'elohim Mbala | Développeur Odoo & Laravel · Data Analyst · Consultant ERP</title>
+  <meta name="description" content="D'elohim (Stanis) Mbala, développeur Odoo & Laravel, Data Analyst et consultant ERP à Kinshasa. ERP sur mesure, Power BI et digitalisation des processus métiers.">
+  <meta name="keywords" content="D'elohim Mbala, Stanis Mbala, Développeur Odoo, Odoo Developer, Laravel, Data Analyst, Business Analyst, Consultant ERP, Power BI, Transformation digitale, Kinshasa, RDC">
+  <meta name="author" content="D'elohim Mbala">
+  <meta name="theme-color" content="#101a20">
+  <link rel="canonical" href="https://delohim.github.io/">
+
+  <!-- Open Graph / réseaux sociaux -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="D'elohim Mbala — Portfolio">
+  <meta property="og:title" content="D'elohim Mbala | Développeur Odoo & Laravel · Data Analyst · Consultant ERP">
+  <meta property="og:description" content="D'elohim (Stanis) Mbala, développeur Odoo & Laravel, Data Analyst et consultant ERP à Kinshasa. ERP sur mesure, Power BI et digitalisation des processus métiers.">
+  <meta property="og:url" content="https://delohim.github.io/">
+  <meta property="og:image" content="https://delohim.github.io/assets/img/profile/profil.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="D'elohim Mbala | Développeur Odoo & Laravel · Data Analyst · Consultant ERP">
+  <meta name="twitter:description" content="D'elohim (Stanis) Mbala, développeur Odoo & Laravel, Data Analyst et consultant ERP à Kinshasa. ERP sur mesure, Power BI et digitalisation des processus métiers.">
+  <meta name="twitter:image" content="https://delohim.github.io/assets/img/profile/profil.jpg">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600&family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <style>
-    /* Styles supplémentaires pour un rendu premium */
-    .highlight {
-      color: #0d6efd;
-    }
-    .hero .btn-outline {
-      border: 2px solid #0d6efd;
-      color: #0d6efd;
-      background: transparent;
-      transition: all 0.3s ease;
-    }
-    .hero .btn-outline:hover {
-      background: #0d6efd;
-      color: #fff;
-    }
-    .hero .social-links a {
-      color: #6c757d;
-      transition: all 0.3s ease;
-      font-size: 1.2rem;
-      margin: 0 10px;
-    }
-    .hero .social-links a:hover {
-      color: #0d6efd;
-      transform: translateY(-3px);
-    }
-    .floating-card {
-      background: rgba(255,255,255,0.95);
-      backdrop-filter: blur(10px);
-      border-radius: 12px;
-      padding: 10px 18px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 500;
-      font-size: 0.9rem;
-      transition: all 0.3s ease;
-    }
-    .floating-card i {
-      font-size: 1.3rem;
-      color: #0d6efd;
-    }
-    .floating-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 40px rgba(13,110,253,0.2);
-    }
-    .header-social-links a {
-      color: #6c757d;
-      transition: all 0.3s ease;
-      margin-left: 15px;
-      font-size: 1.1rem;
-    }
-    .header-social-links a:hover {
-      color: #0d6efd;
-      transform: translateY(-2px);
-    }
-    .btn-primary {
-      background: #0d6efd;
-      border: none;
-      padding: 12px 30px;
-      border-radius: 50px;
-      font-weight: 500;
-      transition: all 0.3s ease;
-    }
-    .btn-primary:hover {
-      background: #0b5ed7;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(13,110,253,0.3);
-    }
-    .image-wrapper img {
-      border-radius: 20px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-    }
-    .image-wrapper img:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 25px 70px rgba(0,0,0,0.15);
-    }
-    .floating-elements {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-    }
-    .floating-card {
-      position: absolute;
-      pointer-events: auto;
-    }
-    .floating-card.data-analytics {
-      top: 5%;
-      right: -10%;
-    }
-    .floating-card.odoo-erp {
-      bottom: 20%;
-      left: -15%;
-    }
-    .floating-card.bi-dashboard {
-      top: 50%;
-      right: -5%;
-      transform: translateY(-50%);
-    }
-    .floating-card.digital-transformation {
-      bottom: 5%;
-      right: 10%;
-    }
-    @media (max-width: 992px) {
-      .floating-card {
-        display: none;
-      }
-    }
-    #footer .social-links a {
-      color: #6c757d;
-      transition: all 0.3s ease;
-      margin: 0 10px;
-      font-size: 1.2rem;
-    }
-    #footer .social-links a:hover {
-      color: #0d6efd;
-      transform: translateY(-3px);
-    }
-    .typed {
-      color: #0d6efd;
-    }
-    .hero-content h1 {
-      font-size: 3.2rem;
-      font-weight: 700;
-      line-height: 1.2;
-    }
-    .hero-content h2 {
-      font-size: 1.8rem;
-      font-weight: 300;
-      margin-top: 10px;
-    }
-    .hero-content p {
-      font-size: 1.1rem;
-      color: #6c757d;
-      margin: 20px 0 30px;
-      line-height: 1.8;
-    }
-    .hero-actions .btn {
-      margin-right: 15px;
-      margin-bottom: 10px;
-    }
-  </style>
-
-  <!-- =======================================================
-  * Template Name: FolioOne - Personnalisé pour Stanis Mbala
-  ======================================================== -->
+  <!-- Main CSS Files -->
+  <link href="/assets/css/main.css" rel="stylesheet">
+  <link href="/assets/css/custom.css" rel="stylesheet">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mbala Kazadi D'elohim",
+  "alternateName": [
+    "D'elohim Mbala",
+    "Stanis Mbala"
+  ],
+  "jobTitle": "Développeur Odoo & Laravel, Data Analyst",
+  "url": "https://delohim.github.io/",
+  "image": "https://delohim.github.io/assets/img/profile/profil.jpg",
+  "email": "mailto:mbalastns@gmail.com",
+  "telephone": "+243812779730",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kinshasa",
+    "addressCountry": "CD"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Université de Kinshasa"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Malabar"
+  },
+  "knowsAbout": [
+    "Odoo",
+    "Laravel",
+    "PHP",
+    "Python",
+    "SQL",
+    "PostgreSQL",
+    "Power BI",
+    "Business Intelligence",
+    "Transformation digitale"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/stanis-mbala-027b73303/",
+    "https://github.com/DELOHIM",
+    "https://www.facebook.com/delohim.mbalastanis"
+  ]
+}
+  </script>
 </head>
 
 <body class="index-page">
 
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
-      <nav id="navmenu" class="navmenu">
+      <a href="/" class="brand" aria-label="Accueil — D'elohim Mbala">
+        <span class="mark">DM</span><span class="name">D'elohim Mbala</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu" aria-label="Navigation principale">
         <ul>
-    <li><a href="/" class="active">Accueil</a></li>
-    <li><a href="/about/">À propos</a></li>
-    <li><a href="/resume/">CV</a></li>
-    <li><a href="/services/">Nos solutions</a></li>
-    <li><a href="/portfolio/">Projets réalisés</a></li>
-    <li><a href="/contact/">Contact</a></li>
-  </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          <li><a href="/" class="active" aria-current="page">Accueil</a></li>
+          <li><a href="/about/">À propos</a></li>
+          <li><a href="/resume/">CV</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/portfolio/">Projets</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" role="button" tabindex="0" aria-label="Ouvrir le menu"></i>
       </nav>
 
-     <div class="header-social-links">
-  <a href="https://www.linkedin.com/in/stanis-mbala-027b73303/" class="linkedin" title="LinkedIn" target="_blank">
-    <i class="bi bi-linkedin"></i>
-  </a>
-  <a href="https://github.com/votre-utilisateur" class="github" title="GitHub" target="_blank">
-    <i class="bi bi-github"></i>
-  </a>
-  <a href="https://wa.me/243812779730" class="whatsapp" title="WhatsApp" target="_blank">
-    <i class="bi bi-whatsapp"></i>
-  </a>
-  <a href="mailto:mbalastns@gmail.com" class="envelope" title="Email">
-    <i class="bi bi-envelope"></i>
-  </a>
-  <a href="https://www.facebook.com/delohim.mbalastanis" class="facebook" title="Facebook" target="_blank">
-    <i class="bi bi-facebook"></i>
-  </a>
-</div>
+      <div class="header-social-links">
+        <a href="https://www.linkedin.com/in/stanis-mbala-027b73303/" class="linkedin" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/DELOHIM" class="github" title="GitHub" aria-label="GitHub" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+        <a href="https://wa.me/243812779730" class="whatsapp" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
+        <a href="mailto:mbalastns@gmail.com" class="envelope" title="Email" aria-label="Email"><i class="bi bi-envelope"></i></a>
+        <a href="https://www.facebook.com/delohim.mbalastanis" class="facebook" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+      </div>
+
     </div>
   </header>
 
-  <main class="main">
+  <main class="main" id="main">
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="hero" class="hero section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4 align-items-center">
           <div class="col-lg-6 order-2 order-lg-1">
             <div class="hero-content">
+              <span class="availability" data-aos="fade-up"><span class="dot"></span>Disponible pour de nouvelles missions</span>
               <h1 data-aos="fade-up" data-aos-delay="200">Bonjour, je suis <span class="highlight">D'elohim Mbala</span></h1>
               <h2 data-aos="fade-up" data-aos-delay="300">
-                <span class="typed" data-typed-items="Odoo Developer, Business Analyst, Data Analyst, Laravel Developer, ERP Consultant, Digital Transformation Specialist"></span>
+                <span class="typed" data-typed-items="Développeur Odoo, Business Analyst, Data Analyst, Développeur Laravel, Consultant ERP">Développeur Odoo</span>
               </h2>
               <p data-aos="fade-up" data-aos-delay="400">
-                Spécialiste en transformation digitale et développement ERP. J'accompagne les entreprises dans l'optimisation de leurs processus grâce à des solutions innovantes en <strong>Odoo, Laravel</strong> et <strong>Business Intelligence</strong>. Mon expertise couvre l'analyse de données, l'automatisation des processus métiers et la conception de systèmes sur mesure pour une performance durable.
+                Spécialiste de la transformation digitale, je conçois des <strong>ERP Odoo</strong>, des <strong>applications Laravel</strong> et des <strong>tableaux de bord Power BI</strong> qui font gagner du temps à vos équipes et donnent de la visibilité à vos décisions.
               </p>
-            <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
-  <a href="/portfolio/" class="btn btn-primary">Voir mes projets</a>
-  <a href="/contact/" class="btn btn-outline">Me contacter</a>
-  <a href="/assets/CV.pdf" class="btn btn-outline" download>Télécharger mon CV</a>
-</div>
-             
-            
+              <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+                <a href="/portfolio/" class="btn-accent"><i class="bi bi-grid"></i>Voir mes projets</a>
+                <a href="/contact/" class="btn-line"><i class="bi bi-chat-dots"></i>Me contacter</a>
+                <a href="/assets/CV.pdf" class="btn-line" download><i class="bi bi-download"></i>Mon CV</a>
+              </div>
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2">
-  <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
-    <div class="image-wrapper position-relative">
-      <!-- Photo de profil ronde -->
-      <img src="assets/img/profile/profil.jpg" alt="Stanis Mbala - Consultant ERP & Data Analyst" class="img-fluid">
-      <figcaption class="profile-caption">
-        <div class="meta">
-          <strong>D'elohim Mbala</strong>
-          <div class="funfact">Odoo Developer &amp; Business Analyst</div>
-        </div>
-      </figcaption>
-    </div>
-  </div>
-</div>
+            <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
+              <figure class="image-wrapper position-relative">
+                <img src="/assets/img/profile/profil.jpg" alt="Portrait de D'elohim Mbala, développeur Odoo et Data Analyst" class="img-fluid" width="1023" height="1115" fetchpriority="high">
+                <figcaption class="profile-caption">
+                  <div class="meta">
+                    <strong>D'elohim Mbala</strong>
+                    <div class="funfact">Odoo Developer &amp; Business Analyst</div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
-
       </div>
+    </section><!-- /Hero -->
 
-    </section><!-- /Hero Section -->
+    <!-- Chiffres clés -->
+    <section class="block pt-0">
+      <div class="container">
+        <div class="row g-3 g-lg-4">
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-card">
+              <i class="bi bi-briefcase"></i>
+              <span class="num"><span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter">2</span>+</span>
+              <span class="label">années en entreprise</span>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="180">
+            <div class="stat-card">
+              <i class="bi bi-kanban"></i>
+              <span class="num"><span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter">12</span></span>
+              <span class="label">projets réalisés</span>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="260">
+            <div class="stat-card">
+              <i class="bi bi-mortarboard"></i>
+              <span class="num"><span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter">6</span>+</span>
+              <span class="label">années de formation dispensée</span>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="340">
+            <div class="stat-card">
+              <i class="bi bi-building"></i>
+              <span class="num"><span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter">8</span></span>
+              <span class="label">secteurs d'activité</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="block block-alt">
+      <div class="container">
+        <div class="block-head" data-aos="fade-up">
+          <span class="eyebrow">Ce que je fais</span>
+          <h2>Des solutions concrètes pour votre entreprise</h2>
+          <p>De l'analyse de vos processus jusqu'à la mise en production, je vous accompagne sur toute la chaîne.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-card">
+              <div class="icon"><i class="bi bi-boxes"></i></div>
+              <h3>Développement & intégration Odoo</h3>
+              <p>Modules Odoo sur mesure, paramétrage des applications standard (ventes, achats, stock, comptabilité, CRM) et migration de vos données.</p>
+              
+              
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="180">
+            <div class="feature-card">
+              <div class="icon"><i class="bi bi-graph-up-arrow"></i></div>
+              <h3>Business Intelligence & Data</h3>
+              <p>Tableaux de bord Power BI, indicateurs de performance et analyses pour décider vite, sur des chiffres fiables.</p>
+              
+              
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="260">
+            <div class="feature-card">
+              <div class="icon"><i class="bi bi-code-slash"></i></div>
+              <h3>Applications web Laravel</h3>
+              <p>Applications web robustes et évolutives : plateformes de gestion, portails clients, suivi en ligne et API.</p>
+              
+              
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5" data-aos="fade-up">
+          <a href="/services/" class="btn-line">Tous les services <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section class="block">
+      <div class="container">
+        <div class="block-head" data-aos="fade-up">
+          <span class="eyebrow">Réalisations</span>
+          <h2>Projets récents</h2>
+          <p>Santé, énergie, logistique, immobilier, commerce : des outils pensés pour le terrain.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-card">
+              <div class="icon"><i class="bi bi-heart-pulse"></i></div>
+              <div class="sector">Santé</div>
+              <h3>ERP Pharmacie — Odoo 17</h3>
+              <p>Gestion complète de pharmacie : stocks, ventes, achats, scan de codes-barres, double devise USD/CDF, caisse et alertes de péremption.</p>
+              <div class="tag-list"><span>Odoo 17</span><span>Python</span><span>PostgreSQL</span><span>QWeb</span></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="180">
+            <div class="feature-card">
+              <div class="icon"><i class="bi bi-hospital"></i></div>
+              <div class="sector">Santé</div>
+              <h3>Gestion hospitalière — Odoo</h3>
+              <p>ERP hospitalier : dossiers patients, consultations, hospitalisations, laboratoire, pharmacie, facturation et rapports.</p>
+              <div class="tag-list"><span>Odoo</span><span>Python</span><span>PostgreSQL</span><span>ERP Santé</span></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="260">
+            <div class="feature-card">
+              <div class="icon"><i class="bi bi-fuel-pump"></i></div>
+              <div class="sector">Énergie</div>
+              <h3>Gestion de station-service — Odoo</h3>
+              <p>Carburants, cuves, pompes, stocks, ventes, clients, facturation et caisse réunis dans un seul outil.</p>
+              <div class="tag-list"><span>Odoo</span><span>Python</span><span>PostgreSQL</span><span>ERP</span></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-card">
+              <div class="icon"><i class="bi bi-globe2"></i></div>
+              <div class="sector">Logistique</div>
+              <h3>Starbit Trading — logiciel & site</h3>
+              <p>Logiciel de gestion interne et site web de suivi des colis en ligne pour les clients.</p>
+              <div class="tag-list"><span>Laravel</span><span>PHP</span><span>JavaScript</span><span>MySQL</span></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="180">
+            <div class="feature-card">
+              <div class="icon"><i class="bi bi-speedometer2"></i></div>
+              <div class="sector">Pilotage</div>
+              <h3>Tableaux de bord analytiques</h3>
+              <p>Tableaux de bord et outils d'analyse : KPI, statistiques commerciales et suivi financier.</p>
+              <div class="tag-list"><span>Power BI</span><span>Python</span><span>Pandas</span><span>NumPy</span></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="260">
+            <div class="feature-card">
+              <div class="icon"><i class="bi bi-robot"></i></div>
+              <div class="sector">Intelligence artificielle</div>
+              <h3>IA — Reconnaissance d'émotions</h3>
+              <p>Réseau de neurones convolutif (CNN) reconnaissant 8 émotions faciales : joie, tristesse, colère, peur, surprise, neutre, mépris, dégoût.</p>
+              <div class="tag-list"><span>Python</span><span>TensorFlow</span><span>Keras</span><span>CNN</span><span>OpenCV</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5" data-aos="fade-up">
+          <a href="/portfolio/" class="btn-line">Voir les 12 projets <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Méthode -->
+    <section class="block block-alt">
+      <div class="container">
+        <div class="block-head" data-aos="fade-up">
+          <span class="eyebrow">Méthode</span>
+          <h2>Comment je travaille</h2>
+          <p>Une démarche simple et transparente, avec vous à chaque étape.</p>
+        </div>
+        <div class="row g-4 process-row">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="process-step">
+              <div class="step-num">01</div>
+              <h3>Écoute & analyse</h3>
+              <p>Comprendre votre activité, vos contraintes et vos objectifs, puis cartographier les processus existants.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="180">
+            <div class="process-step">
+              <div class="step-num">02</div>
+              <h3>Conception</h3>
+              <p>Proposer une solution claire : périmètre, maquettes, planning et budget validés ensemble.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="260">
+            <div class="process-step">
+              <div class="step-num">03</div>
+              <h3>Développement</h3>
+              <p>Livraisons régulières, démonstrations et ajustements pour coller à votre réalité terrain.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="340">
+            <div class="process-step">
+              <div class="step-num">04</div>
+              <h3>Déploiement & suivi</h3>
+              <p>Mise en production, formation des équipes, support et améliorations continues.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section class="block">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="block-head text-lg-start mb-0">
+              <span class="eyebrow">Stack technique</span>
+              <h2>Les outils que j'utilise au quotidien</h2>
+              <p>Des technologies éprouvées, choisies pour leur fiabilité et leur coût maîtrisé.</p>
+            </div>
+          </div>
+          <div class="col-lg-8" data-aos="fade-left">
+            <div class="stack-group"><h3>ERP & back-end</h3><div class="chips"><span class="chip"><i class="bi bi-boxes"></i>Odoo</span><span class="chip"><i class="bi bi-filetype-py"></i>Python</span><span class="chip"><i class="bi bi-code-slash"></i>Laravel</span><span class="chip"><i class="bi bi-filetype-php"></i>PHP</span><span class="chip"><i class="bi bi-filetype-xml"></i>XML / QWeb</span></div></div>
+            <div class="stack-group"><h3>Données & BI</h3><div class="chips"><span class="chip"><i class="bi bi-bar-chart-line"></i>Power BI</span><span class="chip"><i class="bi bi-database"></i>PostgreSQL</span><span class="chip"><i class="bi bi-database-gear"></i>MySQL</span><span class="chip"><i class="bi bi-server"></i>SQL Server</span><span class="chip"><i class="bi bi-table"></i>Pandas / NumPy</span></div></div>
+            <div class="stack-group"><h3>Web & outils</h3><div class="chips"><span class="chip"><i class="bi bi-filetype-js"></i>JavaScript</span><span class="chip"><i class="bi bi-filetype-html"></i>HTML / CSS</span><span class="chip"><i class="bi bi-bootstrap"></i>Bootstrap</span><span class="chip"><i class="bi bi-git"></i>Git</span><span class="chip"><i class="bi bi-ubuntu"></i>Linux</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="container" data-aos="zoom-in">
+        <div class="cta-band">
+          <h2>Un projet de digitalisation en tête ?</h2>
+          <p>Décrivez-moi votre besoin : je vous réponds sous 24 h avec une première analyse et des pistes concrètes.</p>
+          <div class="actions">
+            <a href="/contact/" class="btn-accent"><i class="bi bi-send"></i>Parlons de votre projet</a>
+            <a href="https://wa.me/243812779730" class="btn-line" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i>WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
   <footer id="footer" class="footer">
-
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Stanis Mbala</strong> <span>Tous droits réservés.</span></p>
+
+      <div class="row gy-4 footer-grid">
+        <div class="col-lg-5">
+          <h4>D'elohim Mbala</h4>
+          <p>Développeur Odoo &amp; Laravel, Data Analyst et consultant ERP basé à Kinshasa. J'aide les entreprises à digitaliser leurs processus et à piloter leur activité par la donnée.</p>
+        </div>
+        <div class="col-5 col-lg-3">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/about/">À propos</a></li>
+            <li><a href="/resume/">CV</a></li>
+            <li><a href="/services/">Services</a></li>
+            <li><a href="/portfolio/">Projets</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-7 col-lg-4">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="bi bi-envelope"></i><a href="mailto:mbalastns@gmail.com">mbalastns@gmail.com</a></li>
+            <li><i class="bi bi-whatsapp"></i><a href="https://wa.me/243812779730" target="_blank" rel="noopener">+243 812 779 730</a></li>
+            <li><i class="bi bi-geo-alt"></i>Kinshasa, RD Congo</li>
+            <li><i class="bi bi-file-earmark-pdf"></i><a href="/assets/CV.pdf" download>Télécharger mon CV</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright text-center">
+        <p>© <span id="year">2026</span> <strong class="px-1 sitename">D'elohim Mbala</strong> <span>Tous droits réservés.</span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
- <a href="https://www.linkedin.com/in/stanis-mbala-027b73303/" class="linkedin" title="LinkedIn" target="_blank">
-    <i class="bi bi-linkedin"></i>
-  </a>
-  <a href="https://github.com/votre-utilisateur" class="github" title="GitHub" target="_blank">
-    <i class="bi bi-github"></i>
-  </a>
-  <a href="https://wa.me/243812779730" class="whatsapp" title="WhatsApp" target="_blank">
-    <i class="bi bi-whatsapp"></i>
-  </a>
-  <a href="mailto:mbalastns@gmail.com" class="envelope" title="Email">
-    <i class="bi bi-envelope"></i>
-  </a>
-  <a href="https://www.facebook.com/delohim.mbalastanis" class="facebook" title="Facebook" target="_blank">
-    <i class="bi bi-facebook"></i>
-  </a>
-      </div>
-      <div class="credits">
-        <!-- Crédits retirés conformément à la demande -->
+        <a href="https://www.linkedin.com/in/stanis-mbala-027b73303/" class="linkedin" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/DELOHIM" class="github" title="GitHub" aria-label="GitHub" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+        <a href="https://wa.me/243812779730" class="whatsapp" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
+        <a href="mailto:mbalastns@gmail.com" class="envelope" title="Email" aria-label="Email"><i class="bi bi-envelope"></i></a>
+        <a href="https://www.facebook.com/delohim.mbalastanis" class="facebook" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
       </div>
     </div>
-
   </footer>
 
+  <!-- WhatsApp -->
+  <a href="https://wa.me/243812779730" class="wa-float" target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp" title="Discuter sur WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Retour en haut"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="/assets/js/main.js"></script>
 
 </body>
 
